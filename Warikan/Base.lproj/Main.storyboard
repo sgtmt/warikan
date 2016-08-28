@@ -113,7 +113,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="帰宅人数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICM-vL-281">
-                                <rect key="frame" x="30" y="250" width="68" height="21"/>
+                                <rect key="frame" x="30" y="246" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -129,7 +129,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="先払金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frM-MZ-MFf">
-                                <rect key="frame" x="30" y="313" width="68" height="21"/>
+                                <rect key="frame" x="30" y="317" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -144,18 +144,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-7Q-C7g">
-                                <rect key="frame" x="145" y="395" width="30" height="30"/>
-                                <state key="normal" title="支払"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMu-lR-fTF">
-                                <rect key="frame" x="145" y="481" width="68" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="合計金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqW-eT-fkZ">
+                                <rect key="frame" x="30" y="149" width="69" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="合計金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqW-eT-fkZ">
-                                <rect key="frame" x="30" y="151" width="69" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-7Q-C7g">
+                                <rect key="frame" x="129" y="432" width="30" height="30"/>
+                                <state key="normal" title="支払"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMu-lR-fTF">
+                                <rect key="frame" x="110" y="510" width="68" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -165,7 +165,9 @@
                         <constraints>
                             <constraint firstItem="aSZ-ce-6EW" firstAttribute="top" secondItem="Dex-Xb-2Vo" secondAttribute="bottom" constant="43" id="06d-hP-Jdg"/>
                             <constraint firstItem="Dex-Xb-2Vo" firstAttribute="leading" secondItem="ICM-vL-281" secondAttribute="trailing" constant="31" id="8fq-Bo-Nrs"/>
+                            <constraint firstItem="frM-MZ-MFf" firstAttribute="top" secondItem="ICM-vL-281" secondAttribute="bottom" constant="50" id="TlR-OH-aSa"/>
                             <constraint firstItem="ixp-id-ws9" firstAttribute="leading" secondItem="sxz-hF-eYi" secondAttribute="trailing" constant="30" id="W0e-IS-2SB"/>
+                            <constraint firstItem="oqW-eT-fkZ" firstAttribute="top" secondItem="sxz-hF-eYi" secondAttribute="bottom" constant="50" id="bla-bI-nEV"/>
                             <constraint firstItem="aSZ-ce-6EW" firstAttribute="top" secondItem="Dex-Xb-2Vo" secondAttribute="bottom" constant="43" id="kC5-pI-F9o"/>
                             <constraint firstItem="aEw-kz-TXu" firstAttribute="top" secondItem="ixp-id-ws9" secondAttribute="bottom" constant="43" id="lFP-cA-mFL"/>
                             <constraint firstItem="aEw-kz-TXu" firstAttribute="leading" secondItem="oqW-eT-fkZ" secondAttribute="trailing" constant="30" id="lIN-bk-nLa"/>
