@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="685" y="1107"/>
         </scene>
-        <!--View Controller-->
+        <!--Use View Controller-->
         <scene sceneID="9ok-cf-dhw">
             <objects>
-                <viewController id="KG3-rI-5s3" sceneMemberID="viewController">
+                <viewController id="KG3-rI-5s3" customClass="UseViewController" customModule="Warikan" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A6E-to-VBS"/>
                         <viewControllerLayoutGuide type="bottom" id="Qfu-Jv-RCv"/>
@@ -121,12 +121,12 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixp-id-ws9">
                                 <rect key="frame" x="129" y="74" width="132" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dex-Xb-2Vo">
                                 <rect key="frame" x="129" y="241" width="132" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="先払金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frM-MZ-MFf">
                                 <rect key="frame" x="30" y="317" width="68" height="21"/>
@@ -137,12 +137,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aSZ-ce-6EW">
                                 <rect key="frame" x="129" y="314" width="132" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-kz-TXu">
-                                <rect key="frame" x="129" y="147" width="132" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="合計金額" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqW-eT-fkZ">
                                 <rect key="frame" x="30" y="149" width="69" height="22"/>
@@ -153,15 +148,24 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bB1-7Q-C7g">
                                 <rect key="frame" x="129" y="432" width="30" height="30"/>
                                 <state key="normal" title="支払"/>
+                                <connections>
+                                    <action selector="Result_Action_Btn:" destination="KG3-rI-5s3" eventType="touchUpInside" id="NMK-UG-igc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMu-lR-fTF">
-                                <rect key="frame" x="110" y="510" width="68" height="21"/>
+                                <rect key="frame" x="30" y="502" width="252" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aEw-kz-TXu">
+                                <rect key="frame" x="129" y="147" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="aSZ-ce-6EW" firstAttribute="top" secondItem="Dex-Xb-2Vo" secondAttribute="bottom" constant="43" id="06d-hP-Jdg"/>
                             <constraint firstItem="Dex-Xb-2Vo" firstAttribute="leading" secondItem="ICM-vL-281" secondAttribute="trailing" constant="31" id="8fq-Bo-Nrs"/>
@@ -174,13 +178,27 @@
                             <constraint firstItem="aEw-kz-TXu" firstAttribute="top" secondItem="ixp-id-ws9" secondAttribute="bottom" constant="43" id="lva-E3-THR"/>
                             <constraint firstItem="aSZ-ce-6EW" firstAttribute="leading" secondItem="frM-MZ-MFf" secondAttribute="trailing" constant="31" id="oUm-K1-IBk"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="s7d-eo-ppx" appends="YES" id="b0M-wd-LGB"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="7OZ-LX-c9l"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="all_Money" destination="aEw-kz-TXu" id="6kC-aM-IOI"/>
+                        <outlet property="peopleText" destination="ixp-id-ws9" id="eig-wH-4VE"/>
+                        <outlet property="result_Data" destination="nMu-lR-fTF" id="bDQ-57-ST8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKY-dt-kBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="s7d-eo-ppx">
+                    <connections>
+                        <action selector="tap_view:" destination="KG3-rI-5s3" id="D79-3M-d0n"/>
+                        <outlet property="delegate" destination="rOf-gc-U9y" id="klO-nc-Kx4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1515" y="363"/>
+            <point key="canvasLocation" x="1503" y="363"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fcZ-ga-Ihb">
