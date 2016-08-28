@@ -13,7 +13,18 @@
 		070FA9FC1D6F596A000D277B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070FA9FB1D6F596A000D277B /* Assets.xcassets */; };
 		070FA9FF1D6F5977000D277B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070FA9FD1D6F5977000D277B /* LaunchScreen.storyboard */; };
 		077B3FCB1D7317400081C78B /* UseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077B3FCA1D7317400081C78B /* UseViewController.swift */; };
+		077B3FD31D732C280081C78B /* WarikanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077B3FD21D732C280081C78B /* WarikanUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		077B3FD51D732C280081C78B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 070FA9E91D6F5963000D277B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 070FA9F01D6F5964000D277B;
+			remoteInfo = Warikan;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		070FA9F11D6F5966000D277B /* Warikan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warikan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		070FA9FE1D6F5977000D277B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070FAA001D6F5977000D277B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		077B3FCA1D7317400081C78B /* UseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseViewController.swift; sourceTree = "<group>"; };
+		077B3FD01D732C260081C78B /* WarikanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarikanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		077B3FD21D732C280081C78B /* WarikanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarikanUITests.swift; sourceTree = "<group>"; };
+		077B3FD41D732C280081C78B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		070FA9EE1D6F5964000D277B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077B3FCD1D732C260081C78B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				070FA9F31D6F5968000D277B /* Warikan */,
+				077B3FD11D732C280081C78B /* WarikanUITests */,
 				070FA9F21D6F5966000D277B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				070FA9F11D6F5966000D277B /* Warikan.app */,
+				077B3FD01D732C260081C78B /* WarikanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +88,15 @@
 				070FAA001D6F5977000D277B /* Info.plist */,
 			);
 			path = Warikan;
+			sourceTree = "<group>";
+		};
+		077B3FD11D732C280081C78B /* WarikanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				077B3FD21D732C280081C78B /* WarikanUITests.swift */,
+				077B3FD41D732C280081C78B /* Info.plist */,
+			);
+			path = WarikanUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +119,24 @@
 			productReference = 070FA9F11D6F5966000D277B /* Warikan.app */;
 			productType = "com.apple.product-type.application";
 		};
+		077B3FCF1D732C260081C78B /* WarikanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 077B3FD71D732C280081C78B /* Build configuration list for PBXNativeTarget "WarikanUITests" */;
+			buildPhases = (
+				077B3FCC1D732C260081C78B /* Sources */,
+				077B3FCD1D732C260081C78B /* Frameworks */,
+				077B3FCE1D732C260081C78B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				077B3FD61D732C280081C78B /* PBXTargetDependency */,
+			);
+			name = WarikanUITests;
+			productName = WarikanUITests;
+			productReference = 077B3FD01D732C260081C78B /* WarikanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -100,6 +150,10 @@
 					070FA9F01D6F5964000D277B = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 7LQ42EZUAN;
+					};
+					077B3FCF1D732C260081C78B = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 070FA9F01D6F5964000D277B;
 					};
 				};
 			};
@@ -117,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				070FA9F01D6F5964000D277B /* Warikan */,
+				077B3FCF1D732C260081C78B /* WarikanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +184,13 @@
 				070FA9FF1D6F5977000D277B /* LaunchScreen.storyboard in Resources */,
 				070FA9FC1D6F596A000D277B /* Assets.xcassets in Resources */,
 				070FA9FA1D6F5969000D277B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		077B3FCE1D732C260081C78B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +207,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		077B3FCC1D732C260081C78B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077B3FD31D732C280081C78B /* WarikanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		077B3FD61D732C280081C78B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 070FA9F01D6F5964000D277B /* Warikan */;
+			targetProxy = 077B3FD51D732C280081C78B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		070FA9F81D6F5969000D277B /* Main.storyboard */ = {
@@ -278,6 +356,28 @@
 			};
 			name = Release;
 		};
+		077B3FD81D732C280081C78B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WarikanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgtmt.jp.WarikanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Warikan;
+			};
+			name = Debug;
+		};
+		077B3FD91D732C280081C78B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WarikanUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sgtmt.jp.WarikanUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Warikan;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -298,6 +398,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		077B3FD71D732C280081C78B /* Build configuration list for PBXNativeTarget "WarikanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				077B3FD81D732C280081C78B /* Debug */,
+				077B3FD91D732C280081C78B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
