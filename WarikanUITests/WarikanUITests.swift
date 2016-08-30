@@ -31,14 +31,26 @@ class WarikanUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+
         let app = XCUIApplication()
-        app.buttons["使い方"].tap()
+        app.buttons["使い方"].pressForDuration(0.5);
         app.navigationBars["UIView"].childrenMatchingType(.Button).matchingIdentifier("Back").elementBoundByIndex(0).tap()
         app.buttons["使う"].tap()
-        
-       
+        let element = app.otherElements.containingType(.NavigationBar, identifier:"Warikan.UseView").childrenMatchingType(.Other).element.childrenMatchingType(.Other).element.childrenMatchingType(.Other).element
+        element.childrenMatchingType(.TextField).elementBoundByIndex(0).tap()
+        element.tap()
+        element.tap()
+        element.childrenMatchingType(.TextField).elementBoundByIndex(1).tap()
+        element.tap()
+        app.buttons["支払"].tap()
+    }
+    
 
     }
     
-}
+
+
+
+
+
 
