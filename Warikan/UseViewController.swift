@@ -16,8 +16,18 @@ class UseViewController: UIViewController {
 //AllMoney Textfield
     @IBOutlet weak var result_Data: UILabel!
 //Result Label
+    @IBOutlet weak var kitaku: UITextField!
+//Textfield
+    @IBOutlet weak var sakibarai: UITextField!
+///   Textfield
     var people : Int? = 0
     var money : Int? = 0
+    var kitaku_people : Int? = 0
+    var place_money : Int? = 0
+    
+    
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,16 +50,29 @@ class UseViewController: UIViewController {
     }
 
     @IBAction func Result_Action_Btn(sender: AnyObject) {
-        people = peopleText.text.flatMap{ Int($0) }
-        money = all_Money.text.flatMap{ Int($0) }
         
-        let result:Int? = (money!/people!)
+        text()
+        let siharai:Int? = money!-place_money!
+        let iri:Int? = people!-kitaku_people!
+        
+        let result:Int? = siharai!/iri!
         
         result_Data.text = String(result)
         
 
         
     }
+    func text(){
+        people = peopleText.text.flatMap{ Int($0) }
+        money = all_Money.text.flatMap{ Int($0) }
+        kitaku_people = kitaku.text.flatMap{ Int($0) }
+        place_money = sakibarai.text.flatMap{ Int($0) }
+
+    }
+    
+    
+
+    
     /*
     // MARK: - Navigation
 
