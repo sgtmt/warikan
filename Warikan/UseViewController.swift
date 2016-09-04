@@ -32,12 +32,7 @@ class UseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-
-    
-    
-        // Do any additional setup after loading the view.
-    }
+         }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -59,8 +54,25 @@ class UseViewController: UIViewController {
         
         result_Data.text = String(result)
         
-
+        let alertController = UIAlertController(title: "UIAlertControllerStyle.Alert", message: String(result), preferredStyle: .Alert)
         
+        let otherAction = UIAlertAction(title: "はい", style: .Default) {
+            action in NSLog("はいボタンが押されました")
+        }
+        let cancelAction = UIAlertAction(title: "いいえ", style: .Cancel) {
+            action in NSLog("いいえボタンが押されました")
+        }
+        
+        // addActionした順に左から右にボタンが配置されます
+        alertController.addAction(otherAction)
+        alertController.addAction(cancelAction)
+        
+        presentViewController(alertController, animated: true, completion: nil)
+        
+        // Do any additional setup after loading the view.
+    
+        
+    
     }
     func text(){
         people = peopleText.text.flatMap{ Int($0) }
