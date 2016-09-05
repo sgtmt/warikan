@@ -25,10 +25,6 @@ class UseViewController: UIViewController {
     var kitaku_people : Int? = 0
     var place_money : Int? = 0
     
-    
-
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +46,7 @@ class UseViewController: UIViewController {
         let siharai:Int? = money!-place_money!
         let iri:Int? = people!-kitaku_people!
         
+       
         let result:Int? = siharai!/iri!
         
         result_Data.text = String(result)
@@ -75,10 +72,18 @@ class UseViewController: UIViewController {
     
     }
     func text(){
-        people = peopleText.text.flatMap{ Int($0) }
-        money = all_Money.text.flatMap{ Int($0) }
-        kitaku_people = kitaku.text.flatMap{ Int($0) }
-        place_money = sakibarai.text.flatMap{ Int($0) }
+//        people = peopleText.text.flatMap{ Int($0) }
+          people = Int(peopleText.text!)
+        print(people)
+//        money = all_Money.text.flatMap{ Int($0) }
+          money=Int(all_Money.text!)
+        print(money)
+//        kitaku_people = kitaku.text.flatMap{ Int($0) }
+          kitaku_people=Int(kitaku.text!)
+        print(kitaku_people)
+//        place_money = sakibarai.text.flatMap{ Int($0) }
+          place_money = Int(sakibarai.text!)
+        print(place_money)
 
     }
     
